@@ -52,7 +52,3 @@ $ mongoimport --db student-mgmt-sys --collection users --file users.json
 ```
  - And run the application in the development mode.
 
-License
-----
-
-MIT

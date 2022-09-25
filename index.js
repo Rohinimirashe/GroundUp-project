@@ -1,4 +1,5 @@
 const express = require('express');
+const mongodb = require('mongodb');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override');
 const flash = require('connect-flash');
@@ -25,7 +26,7 @@ require('./config/passport')(passport);
 
 // Connecting to MongoDB...
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/student-mgmt-sys', {
+mongoose.connect('mongodb+srv://Rohini123:Rohini%4012345@cluster0.dggci.mongodb.net/RohiniDB', {
     useNewUrlParser: true
 }).then(() => console.log('Connected to MongoDB Server...')).catch(err => console.error('Error occured connecting to MongoDB...', err));
 
